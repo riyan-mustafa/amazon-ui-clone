@@ -1,0 +1,211 @@
+*{
+    font-family: Arial;
+}
+.menu{
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding-left: 20px;
+    position: relative;   /* IMPORTANT */
+}
+
+/* Sidebar */
+.sidebar{
+    position: fixed;   /* IMPORTANT */
+    top: 0;
+    left: -400px;
+    width: 350px;
+    height: 100vh;
+    background-color: #ffffff;
+    transition: 0.3s;
+    z-index: 12;
+    overflow-y: auto;
+    overflow-x: hidden;
+    transform: translateX(0);
+    scroll-behavior: smooth;
+    padding-bottom: 40px;
+    
+   
+}
+.sidebar.active{
+    transform: translateX(0);
+    overflow-y: auto;
+}
+
+/* Sidebar links */
+
+
+
+
+/* Close button */
+.close-btn{
+    position: absolute;
+    top: 0px;
+    right: -60px ;
+    font-size: 29px;
+    cursor: pointer;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    padding: 2px 5px 2px 5px;
+    
+}
+
+/* Active */
+.sidebar.active{
+    left: 0;
+}
+
+.overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0,0,0,0.6);
+       /* BLUR EFFECT */
+    display: none;
+    z-index: 11;
+}
+
+.overlay.active{
+    display: block;
+}
+
+/* Disable scroll when sidebar open */
+body.no-scroll{
+    overflow: hidden;
+}
+
+
+/* Side Bar Dataa */
+
+.hello{
+    background-color: #232f3e;
+    display: flex;
+    align-items: center;
+    height: 50px;
+    padding-left: 30px;
+    gap: 10px;
+}
+.hello i{
+    font-size: 25px;
+}
+.hello h1{
+    font-size: 20px;
+}
+
+
+/* Trending*/
+
+.trending{
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px; 
+    padding-top: 25px;
+    gap: 20px;
+
+}
+.trending h3{
+    color: #000;
+    font-size: 17px;
+    
+}
+
+.trending a{
+    color: #575555;
+    font-family: Arial;
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+hr{
+    height: 0.5px;
+    margin: 20px 10px;
+    
+    color: aqua;
+    background-color: transparent;
+}
+
+/*digital-content*/
+
+.digital-content{
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
+    gap: 30px;
+   
+}
+.digital-content h2{
+    color: #111111;
+    font-size: 17px;
+}
+.digital-content i{
+    color: #575555;
+}
+
+.digital-content a{
+    text-decoration: none;
+    color: #575555;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    padding-right: 10px;
+}
+/*Program&Feature*/
+
+.program{
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
+    gap: 30px;
+   
+}
+.program h2{
+    color: #111111;
+    font-size: 17px;
+}
+.program i{
+    color: #575555;
+}
+
+.program a{
+    text-decoration: none;
+    color: #575555;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    padding-right: 10px;
+}
+
+/*Help & Setting */
+
+.help{
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
+    gap: 30px;
+    padding-bottom: 50px;
+}
+.help h2{
+    color: #111111;
+    font-size: 17px;
+}
+.help i{
+    color: #575555;
+}
+
+.help a{
+    text-decoration: none;
+    color: #575555;
+    font-weight: 500;
+    font-size: 14px;
+    
+}
+
+
